@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::section})}">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home - Mini-Commerce</title>
+</head>
+
+<body>
+<!-- Llamamos al layout y le pasamos el fragment "content" de esta misma página -->
+
+
+    <!-- Este es el contenido que se insertará dentro del layout -->
+    <section>
+        <h1>Mini-Commerce</h1>
+        <p>Home</p>
+
+        <!-- CTA simple (UX) -->
+        <a href="/products">Ir a Productos</a>
+    </section>
+
+
+</body>
+</html>

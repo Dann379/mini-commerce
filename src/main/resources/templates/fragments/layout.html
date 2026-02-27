@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <title>Mini-Commerce</title>
+</head>
+
+<body>
+<div>
+
+    <header>
+        <div>
+            <strong>Mini-Commerce</strong>
+        </div>
+        <p>TEXTO</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/api/health">Health</a>
+        </nav>
+    </header>
+
+    <main>
+        <div th:replace="${content}"></div>
+    </main>
+
+    <footer>
+        <small>Mini-Commerce © 2026</small>
+    </footer>
+
+</div>
+</body>
+</html>
