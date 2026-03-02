@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::section})}">
+
+<section>
+    <!-- Título -->
+    <h1>Productos</h1>
+
+    <!-- Barra superior: buscador + CTA -->
+    <div class="toolbar">
+        <input type="text" placeholder="Buscar producto…" aria-label="Buscar producto">
+        <a href="/products/new">Nuevo producto</a>
+    </div>
+
+    <!-- Estado vacío (visible hoy) -->
+    <div class="empty-state">
+        <p><strong>Aún no hay productos.</strong></p>
+        <p>Crea el primero para empezar a registrar tu inventario.</p>
+    </div>
+
+    <!-- Tabla (estructura lista, sin datos aún) -->
+    <table>
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <!-- Más adelante aquí irán filas con productos -->
+        </tbody>
+    </table>
+
+</section>
+
+</html>
